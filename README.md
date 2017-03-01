@@ -1,6 +1,10 @@
 # Machine-Learning
 Repo for storing Machine Learning related concepts and code.
 
+Arthur Samuel (1959): Ability for computers to learn without being explicitly programmed.
+
+Tom Mitchell (1998):
+
 ## Some synonyms need to be explained
 
 Depending on the context, an independent variable is sometimes called a "predictor variable", "regressor", "controlled variable", "manipulated variable", "explanatory variable", "exposure variable" (see reliability theory), "risk factor" (see medical statistics), "feature" (in machine learning and pattern recognition) or "input variable."
