@@ -3,7 +3,7 @@ Repo for storing Machine Learning related concepts and code.
 
 Arthur Samuel (1959): Ability for computers to learn without being explicitly programmed.
 
-Tom Mitchell (1998):
+Tom Mitchell (1998): Well posed learning problem: A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves its experience E.
 
 ## Some synonyms need to be explained
 
