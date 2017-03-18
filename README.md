@@ -5,6 +5,12 @@ Arthur Samuel (1959): Ability for computers to learn without being explicitly pr
 
 Tom Mitchell (1998): Well posed learning problem: A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves its experience E.
 
+## Supervised Learning
+
+Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal). A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. An optimal scenario will allow for the algorithm to correctly determine the class labels for unseen instances. This requires the learning algorithm to generalize from the training data to unseen situations in a "reasonable" way (see inductive bias).
+
+The parallel task in human and animal psychology is often referred to as concept learning.
+
 ## Some synonyms need to be explained
 
 Depending on the context, an independent variable is sometimes called a "predictor variable", "regressor", "controlled variable", "manipulated variable", "explanatory variable", "exposure variable" (see reliability theory), "risk factor" (see medical statistics), "feature" (in machine learning and pattern recognition) or "input variable."
