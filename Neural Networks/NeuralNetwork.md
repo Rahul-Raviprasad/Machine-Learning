@@ -5,14 +5,14 @@ These are simplified models of the biological nervous system and therefore has d
 An NN, in general, is a highly interconnected network of a large number of processing elements called neurons, in an architecture inspired by the brain. A NN can be massively parallel exhibiting parallel distributed computing.
 
 #### Characteristics
-1. fault tolerant
-2. robust
-3. mapping capability
-4. pattern association
-5. parallel and high speed.
-
+1. Fault tolerant: Imagine if we loose few neurons in our brains, still it will not have a catastrophic impact it may cause some delay in the processing.
+2. Robust: They can recall full patterns from partial, incomplete or noisy patterns.
+3. Mapping capability: They can map input patterns to their associated output patterns.
+4. Pattern association
+5. Parallel, high speed and distributed.
+ 
 #### Well known Neural network systems
-1. perceptron
+1. Perceptron
 2. Back propagation network
 3. ADALINE(Adaptive Linear Element)
 4. associative memory
