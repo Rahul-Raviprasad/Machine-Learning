@@ -6,6 +6,8 @@
 4. graph the results
 
 ## Step1 : Install the dependencies
+Installing scikit-learn
+http://scikit-learn.org/stable/install.html
 ```
 pip3 install csv
 pip3 install numpy
