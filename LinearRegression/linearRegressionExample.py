@@ -45,3 +45,9 @@ print(model.intercept_)
 # output: 1.0
 # The output are obvious since we made the data in that way only, but had we been just given the matrix/array
 # we would have figured the linear line out from it.
+
+# residual errors around fit.
+print(model.residues_)
+# output: 1.77609840339e-29 this is so small ~ 0. In real world cases this will be much bigger as there would be noise in the data.
+
+print('-- end --')
