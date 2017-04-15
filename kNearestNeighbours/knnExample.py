@@ -20,3 +20,5 @@ print(iris.target_names[result])
 probability = knn.predict_proba([[3, 5, 4, 2],])
 print(probability)
 # output: [[ 0.   0.8  0.2]]
+# We can see that here there is 0% probability that it is the first flower,
+# 80% probability that it is the 2nd flower and 20% probability that it is the 3rd flower. 
