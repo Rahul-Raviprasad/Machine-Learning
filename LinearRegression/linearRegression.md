@@ -30,5 +30,17 @@ As we discussed above, regression is a parametric technique, so it makes assumpt
 5. The dependent variable and the error terms must possess a normal distribution.
 Presence of these assumptions make regression quite restrictive. By restrictive I meant, the performance of a regression model is conditioned on fulfillment of these assumptions
 
+## How to know above assumptions are violated in given data?
+
+Once these assumptions get violated, regression makes biased, erratic predictions.
+
+Of course, you can check performance metrics to estimate violation. But the real treasure is present in the diagnostic a.k.a residual plots. Let's look at the important ones:
+
+1. Residual vs. Fitted Values Plot
+
+Ideally, this plot shouldn't show any pattern. But if you see any shape (curve, U shape), it suggests non-linearity in the data set. In addition, if you see a funnel shape pattern, it suggests your data is suffering from heteroskedasticity, i.e. the error terms have non-constant variance.
+
+
+
 ## Resources
 1. Statistics 101: Simple Linear Regression, The Very Basics - Brandon Foltz https://www.youtube.com/watch?v=ZkjP5RJLQF4&list=PLIeGtxpvyG-LoKUpV0fSY8BGKIMIdmfCi&index=1
