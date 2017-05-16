@@ -22,3 +22,7 @@ Depending on the context, a dependent variable is sometimes called a "response v
 "Explained variable" is preferred by some authors over "dependent variable" when the quantities treated as "dependent variables" may not be statistically dependent. If the dependent variable is referred to as an "explained variable" then the term "predictor variable" is preferred by some authors for the independent variable.
 
 Variables may also be referred to by their form: continuous, binary/dichotomous, nominal categorical, and ordinal categorical, among others.
+
+
+## References
+1. Jake Vanderplas's repo: https://github.com/jakevdp/sklearn_pycon2015
