@@ -24,5 +24,10 @@ Depending on the context, a dependent variable is sometimes called a "response v
 Variables may also be referred to by their form: continuous, binary/dichotomous, nominal categorical, and ordinal categorical, among others.
 
 
+
+
+
+
+
 ## References
 1. Jake Vanderplas's repo: https://github.com/jakevdp/sklearn_pycon2015
