@@ -68,28 +68,51 @@ ufo.City + ufo.State
 #  1 DevliND
 #  ..... etc where IthacaNY is from Ithaca + NY
 
-# to create a new column altoghether you need to use the bracket notation. Dot notation won't work
+# to create a new column altoghther you need to use the bracket notation. Dot notation won't work
 ufo.Location = ufo.City + ', ' ufo.State # this line won't work
 ufo['Location'] = ufo.City + ', ' + ufo.State # this will work
 
 ```
 
-### Why do some pandas commands end with parentheses, and other commands don't?
+### Few Attributes and methods of DataFrames
 
 ```python
 import pandas as pd
 
 movies = pd.read_csv('http://bit.ly/imdbratings')
 
-movies.head() #has paranthesis return first 5 results
+movies.head() #has parenthesis return first 5 results
 
-movies.describe()# again has paranthesis
+movies.describe()# again has parenthesis
 # as long as there is at least one numeric column, it will show you descriptive statistics of all numeric columns
 
-movies.shape # no parentheses
+movies.shape # no parentheses, this method returns a tuple saying the rows, columns our dataframe has
 
-movies.dtypes # no paranthesis as it is an attribute, shows the data types of each columns
+movies.dtypes # no parenthesis as it is an attribute, shows the data types of each columns
 ```
+
+### how to rename a column in a pandas Dataframe?
+
+continuing with the above DataFrame
+```python
+ufo.columns # this is an attribute of the DataFrame, to see the columns
+
+ufo.rename(columns={'Colors Reported': 'Colors_Reported', 'Shape Reported': 'Shape_Reported', inplace=True})
+
+## Second method
+ufo_cols = ['city', 'colors reported', 'shape reported', 'state', 'time']
+ufo.columns = ufo_cols # this way you can update all column names at once
+
+ufo.head() # see that the names would have changed
+
+# now say you want to replace all the spaces with underscore '_'
+ufo.columns = ufo.columns.str.replace(' ', '_')
+ufo.columns # will output all the headers with _ instead of spaces
+
+```
+
+### how to remove columns from a pandas dataframe?
+
 
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
