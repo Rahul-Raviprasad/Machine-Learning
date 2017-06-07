@@ -74,7 +74,22 @@ ufo['Location'] = ufo.City + ', ' + ufo.State # this will work
 
 ```
 
+### Why do some pandas commands end with parentheses, and other commands don't?
 
+```python
+import pandas as pd
+
+movies = pd.read_csv('http://bit.ly/imdbratings')
+
+movies.head() #has paranthesis return first 5 results
+
+movies.describe()# again has paranthesis
+# as long as there is at least one numeric column, it will show you descriptive statistics of all numeric columns
+
+movies.shape # no parentheses
+
+movies.dtypes # no paranthesis as it is an attribute, shows the data types of each columns
+```
 
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
