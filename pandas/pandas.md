@@ -113,6 +113,23 @@ ufo.columns # will output all the headers with _ instead of spaces
 
 ### how to remove columns from a pandas dataframe?
 
+```python
+import pandas as pd
+
+ufo = read_csv('http://bit.ly/uforeports')
+
+ufo.head() #see the first 5 records
+
+ufo.shape # see shape, rows and columns
+
+ufo.drop('Colors Reported', axis=1, inplace=True) #  axis 0 is the row axis, and axis 1 is column axis
+# what it basically does is in the column(1) axis, drop mentioned column and we want this operation to occur inplace.
+
+# to drop multiple column we need to pass the first argument as an array of column names
+ufo.drop(['State', 'City'], axis=1, inplace=True)
+# removes the above 2 columns
+ufo.head() # check the data frame after the changes
+```
 
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
