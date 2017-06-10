@@ -129,7 +129,13 @@ ufo.drop('Colors Reported', axis=1, inplace=True) #  axis 0 is the row axis, and
 ufo.drop(['State', 'City'], axis=1, inplace=True)
 # removes the above 2 columns
 ufo.head() # check the data frame after the changes
+
+#to delete the rows just use axis 0 instead of the 1 and also for first argument pass the labels
+ufo.drop([0,1], axis=0, inplace=True) # this will delete the first 2 rows of the data frame.
 ```
+
+# How to sort a pandas dataframe or series?
 
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
+2. https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y Kevin Markham series on pandas.
