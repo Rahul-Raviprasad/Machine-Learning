@@ -139,3 +139,4 @@ ufo.drop([0,1], axis=0, inplace=True) # this will delete the first 2 rows of the
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
 2. https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y Kevin Markham series on pandas.
+3. https://github.com/justmarkham/pandas-videos
