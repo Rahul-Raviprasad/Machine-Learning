@@ -4,6 +4,14 @@ pandas is an open source, BSD-licensed library providing high-performance, easy-
 
 http://pandas.pydata.org/
 
+### create a new dataframe
+
+```python
+import pandas as pd
+
+my_data_frame = pd.DataFrame(columns=['column1', 'column2', 'column3'])
+```
+
 ### How to read tabular(data in table) data file into pandas?
 
 ```python
