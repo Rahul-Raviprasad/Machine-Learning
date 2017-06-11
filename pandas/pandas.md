@@ -10,6 +10,8 @@ http://pandas.pydata.org/
 import pandas as pd
 
 my_data_frame = pd.DataFrame(columns=['column1', 'column2', 'column3'])
+# add entry to dataframe
+my_data_frame.append({'column1': 'value1','column2': 'value2','column3': 'value3'})
 ```
 
 ### How to read tabular(data in table) data file into pandas?
