@@ -146,6 +146,17 @@ ufo.drop([0,1], axis=0, inplace=True) # this will delete the first 2 rows of the
 
 # How to sort a pandas dataframe or series?
 
+you can sort the values using the .sort_values() method
+
+```python
+# say movies is a dataframe with columns like 'title', 'rating' etc and you want to sort based on the title
+
+movies.title.sort_values()
+# or
+movies['title'].sort_values()
+
+```
+
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
 2. https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y Kevin Markham series on pandas.
