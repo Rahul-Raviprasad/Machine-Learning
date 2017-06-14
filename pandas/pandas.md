@@ -149,13 +149,22 @@ ufo.drop([0,1], axis=0, inplace=True) # this will delete the first 2 rows of the
 you can sort the values using the .sort_values() method
 
 ```python
-# say movies is a dataframe with columns like 'title', 'rating' etc and you want to sort based on the title
+# say movies is a dataframe with columns like 'title', 'rating' etc and you want to sort only the series say title
 
 movies.title.sort_values()
 # or
 movies['title'].sort_values()
 
+#to sort our entire dataframe based on a column
+movies.sort_values('title')
+
+# to sort based on multiple values
+
+movies.sort_values(['title', 'duration'])
+
 ```
+
+# how to filter rows of a pandas dataframe by column values?
 
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
