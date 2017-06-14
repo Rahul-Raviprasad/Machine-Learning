@@ -166,6 +166,58 @@ movies.sort_values(['title', 'duration'])
 
 # how to filter rows of a pandas dataframe by column values?
 
+```python
+import pandas as pd
+
+movies = pd.read_csv('http://bit.ly/imdbratings')
+
+movies.head()
+
+# type of True/False will return bool. they are of boolean type
+
+type(True)
+
+booleans = []
+
+for length in movies.duration:
+  if length >= 200:
+    boolean.append(True)
+  else:
+    boolean.append(False)
+
+# this list of booleans tells us which movies is longer than 200 in duration
+# now converting the python list into a series
+
+is_long_movie = pd.Series(booleans)
+
+# now if we pass the above true/false value to the dataframe it uses it to filter out.
+# we do this with the simple bracket notations
+
+movies[is_long_movie] # this returns movies dataframe with only those movies with duration greater than 200 mins
+
+# Approach 2
+is_long = movies.duration >= 200 # this returns entire series, eliminating the need for the for loop
+is_long.head() ## show the first 5 values of the series as booleans
+movies[is_long]
+
+# the above could be done in a single line
+movies[movies.duration >= 200]
+
+```
+
+# How do I apply multiple filter criteria to a pandas DatatFrame?
+
+```python
+import pandas as pd
+
+movies = pd.read_csv('http://bit.ly/imdbratings')
+
+
+```
+
+
+
+
 # Resources
 1. read table: http://pandas.pydata.org/pandas-docs/version/0.20/generated/pandas.read_table.html
 2. https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y Kevin Markham series on pandas.
