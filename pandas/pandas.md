@@ -215,7 +215,16 @@ movies = pd.read_csv('http://bit.ly/imdbratings')
 
 ```
 
+## convert a Json string to python various
 
+``` python
+##
+import json
+
+json_out = json.loads('{"cuz" : [[1,2,3,4],[1,2,3,4],[1,2,3,4]]}')
+print(json_out["cuz"])
+
+```
 
 
 # Resources
