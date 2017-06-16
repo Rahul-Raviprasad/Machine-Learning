@@ -45,7 +45,7 @@ When considering a new application, the engineer can compare multiple learning a
 
 The most widely used learning algorithms are Support Vector Machines, linear regression, logistic regression, naive Bayes, linear discriminant analysis, decision trees, k-nearest neighbor algorithm, and Neural Networks (Multilayer perceptron).
 
-How supervised learning algorithms work
+**How supervised learning algorithms work**
 Given a set of {\displaystyle N} N training examples of the form {\displaystyle \{(x_{1},y_{1}),...,(x_{N},\;y_{N})\}} \{(x_1, y_1), ..., (x_N,\; y_N)\} such that {\displaystyle x_{i}} x_{i} is the feature vector of the i-th example and {\displaystyle y_{i}} y_{i} is its label (i.e., class), a learning algorithm seeks a function {\displaystyle g:X\to Y} g: X \to Y, where {\displaystyle X} X is the input space and {\displaystyle Y} Y is the output space. The function {\displaystyle g} g is an element of some space of possible functions {\displaystyle G} G, usually called the hypothesis space. It is sometimes convenient to represent {\displaystyle g} g using a scoring function {\displaystyle f:X\times Y\to {\mathbb {R}}} f: X \times Y \to \Bbb{R} such that {\displaystyle g} g is defined as returning the {\displaystyle y} y value that gives the highest score: {\displaystyle g(x)=\arg \max _{y}\;f(x,y)} g(x) = \arg \max_y \; f(x,y). Let {\displaystyle F} F denote the space of scoring functions.
 
 Although {\displaystyle G} G and {\displaystyle F} F can be any space of functions, many learning algorithms are probabilistic models where {\displaystyle g} g takes the form of a conditional probability model {\displaystyle g(x)=P(y|x)} g(x) =
@@ -92,7 +92,7 @@ Semi-supervised learning: In this setting, the desired output values are provide
 Active learning: Instead of assuming that all of the training examples are given at the start, active learning algorithms interactively collect new examples, typically by making queries to a human user. Often, the queries are based on unlabeled data, which is a scenario that combines semi-supervised learning with active learning.
 Structured prediction: When the desired output value is a complex object, such as a parse tree or a labeled graph, then standard methods must be extended.
 Learning to rank: When the input is a set of objects and the desired output is a ranking of those objects, then again the standard methods must be extended.
-Approaches and algorithms[edit]
+Approaches and algorithms
 Analytical learning
 Artificial neural network
 Backpropagation
