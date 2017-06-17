@@ -1,16 +1,16 @@
 # Pandas python library
 
-pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
+Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
 http://pandas.pydata.org/
 
-### create a new dataframe
+### create a new DataFrame
 
 ```python
 import pandas as pd
 
 my_data_frame = pd.DataFrame(columns=['column1', 'column2', 'column3'])
-# add entry to dataframe
+# Add entry to DataFrame
 my_data_frame.append({'column1': 'value1','column2': 'value2','column3': 'value3'})
 ```
 
@@ -45,8 +45,8 @@ read_table assumes
 
 ### How do I select a pandas Series from a DataFrame?
 There are 2 basic object types in pandas
-1. Dataframe: table with columns and rows (A column in a data frame is a series)
-2. Series:  you can hold a series separately without having a dataframe.
+1. DataFrame: table with columns and rows (A column in a data frame is a series)
+2. Series:  you can hold a series separately without having a DataFrame.
 
 ```python
 import pandas as pd
@@ -67,7 +67,7 @@ type(ufo['City']) # note:  the column name we are passing here is case sensitive
 ufo.City
 
 # if you need to access a series which has space in between say like "Colors Reported"
-#or same as an attribute of dataframe, then
+# or same as an attribute of DataFrame, then
 # you need to use bracket notation only
 ufo['Colors Reported']
 
@@ -78,8 +78,8 @@ ufo.City + ufo.State
 #  1 DevliND
 #  ..... etc where IthacaNY is from Ithaca + NY
 
-# to create a new column altoghther you need to use the bracket notation. Dot notation won't work
-ufo.Location = ufo.City + ', ' ufo.State # this line won't work
+# to create a new column altogther you need to use the bracket notation. Dot notation won't work
+ufo.Location = ufo.City + ', ' + ufo.State # this line won't work
 ufo['Location'] = ufo.City + ', ' + ufo.State # this will work
 
 ```
@@ -164,7 +164,7 @@ movies.sort_values(['title', 'duration'])
 
 ```
 
-# how to filter rows of a pandas dataframe by column values?
+# how to filter rows of a pandas DataFrame by column values?
 
 ```python
 import pandas as pd
@@ -190,10 +190,10 @@ for length in movies.duration:
 
 is_long_movie = pd.Series(booleans)
 
-# now if we pass the above true/false value to the dataframe it uses it to filter out.
+# now if we pass the above true/false value to the DataFrame it uses it to filter out.
 # we do this with the simple bracket notations
 
-movies[is_long_movie] # this returns movies dataframe with only those movies with duration greater than 200 mins
+movies[is_long_movie] # this returns movies DataFrame with only those movies with duration greater than 200 mins
 
 # Approach 2
 is_long = movies.duration >= 200 # this returns entire series, eliminating the need for the for loop
@@ -205,7 +205,7 @@ movies[movies.duration >= 200]
 
 ```
 
-# How do I apply multiple filter criteria to a pandas DatatFrame?
+# How do I apply multiple filter criteria to a pandas DataFrame?
 
 ```python
 import pandas as pd
@@ -215,7 +215,7 @@ movies = pd.read_csv('http://bit.ly/imdbratings')
 
 ```
 
-## convert a Json string to python various
+## convert a JSON string to python various
 
 ``` python
 ##
