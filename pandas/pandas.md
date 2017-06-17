@@ -211,6 +211,8 @@ movies[movies.duration >= 200]
 import pandas as pd
 
 movies = pd.read_csv('http://bit.ly/imdbratings')
+# we can simply use the '&' AND operator
+movies[(movies.duration >= 200) & (movie.genre == 'Drama')]
 
 
 ```
