@@ -214,6 +214,12 @@ movies = pd.read_csv('http://bit.ly/imdbratings')
 # we can simply use the '&' AND operator
 movies[(movies.duration >= 200) & (movie.genre == 'Drama')]
 
+# or say you want to select all movies of genre Drama, Action and Crime then
+movies[(movie.genre == 'Action') | (movie.genre == 'Drama') | (movie.genre == 'Crime')]
+
+# a shorter way of writing the above line would be
+movies.genre.isin(['Action', 'Drama', 'Crime'])
+
 
 ```
 
