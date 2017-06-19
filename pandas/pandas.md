@@ -223,6 +223,23 @@ movies.genre.isin(['Action', 'Drama', 'Crime'])
 
 ```
 
+## 1. reading from csv file only two columns and ignore others, 2. what is the fastest method to read from csv file?
+3. How to define type of each column before actually reading the csv
+
+```python
+import pandas as pd
+
+ufo = pd.read_csv("http://bit.ly/uforeports")
+ufo.columns
+# the above prints out all the columns, say there are 5 and we want only 2 then
+ufo = pd.read_csv('http:///bit.ly/uforeports', usecols=['City', 'State'])
+# this will ensure you are only getting these 2 columns, you can also select by passing the index.
+ufo = pd.read_csv('http:///bit.ly/uforeports', usecols=[0, 2]) # this will the columns at 0 and at 2 index
+
+```
+
+
+
 ## convert a JSON string to python various
 
 ``` python
