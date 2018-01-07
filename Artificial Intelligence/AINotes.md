@@ -78,11 +78,35 @@ British Museum approach: find every possible path. no backtracking since we find
 Depth first approach: we move down the left node and keep searching and if we don't find then backtrack to the node where we made the last decision and take that branch and repeat until we find it.
 breadth first approach: similar to breadth first, but we check at each level
 hill climbing: if you have information you are getting close to your goal then use it.
+beam search: give a beam width
+
+###  The best path instead of a good path
+* oracle
+* branch and bound
+* + Extended list enqueued list
+* + Admissible heuristics
+* A*
 
 using enqueued lists helps with both depth first and breadth first search. improves the efficiency.
 
 
 Search is not equal to maps, it is about the choice you make, the decisions you come up with.
+
+### Search: Games, Minimax and Alpha Beta
+
+ways to play
+Minimax
+alpha-beta
+progressive deepening
+deep blue = minimax + alpha beta + progressive deepening + parallel computing + opening book + end game + uneven tree development
+
+dead horse principle
+Marshall arts principle
+Anytime algorithms
+
+### Constraints: Interpreting Line Drawings
+
+
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
 
