@@ -106,6 +106,20 @@ Anytime algorithms
 
 ### Constraints: Interpreting Line Drawings
 
+Rumplestilskin principle
+godlilocks principle
+power of correlation
+
+### Introduction to Learning, nearest neighbor
+* Regularity
+  * boosting
+  * nearest neighbor
+  * neural nets
+* Constraint
+  * one shor
+  * explanation based learning
+
+### Learning Identification trees, disorder.
 
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
