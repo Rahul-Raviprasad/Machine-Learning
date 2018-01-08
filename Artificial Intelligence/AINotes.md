@@ -119,7 +119,15 @@ power of correlation
   * one shor
   * explanation based learning
 
-### Learning Identification trees, disorder.
+## Learning: Identification Trees, Disorder
+  * identification Trees:
+  - you can have a bunch of tests and conduct them which can identify, each of the tests can pose some challenges like it could be costly.
+  some test might then require follow up test, which can make them look like a tree.
+  - tests which produce more homogenous sets are better than those that give mixed output.
+
+  * measuring disorder
+  * rules
+  * simplification of rules
 
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
