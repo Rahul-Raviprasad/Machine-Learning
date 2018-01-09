@@ -124,11 +124,57 @@ power of correlation
   - you can have a bunch of tests and conduct them which can identify, each of the tests can pose some challenges like it could be costly.
   some test might then require follow up test, which can make them look like a tree.
   - tests which produce more homogenous sets are better than those that give mixed output.
+  - sometime we will not find test which will help us to clearly tell if it will produce homogenous result. So we will try to determine the Disorder in a set
+  - Quality of a test is equal to  on sum of all disorder of sets times the number of samples in set divided by the number of samples handed by the test.
+  - this q has to be as small as possible.
+  - good identification trees are as small as possible.
 
   * measuring disorder
   * rules
   * simplification of rules
 
+## Neural Nets
+* Models of problem solving
+* Modes of Learning: basic biology inspired
+* neural nets
+  naive neurobiology
+  hill climbing
+  threshold trick
+  sigmoid trick
+  world's simplest net problems
+## Deep neural nets
+  * old days
+  * convolution
+  * pooling
+  * sigmoid/logistic output
+  * Auto coding
+  * fooling
+  * soft max
+  * dropout
+
+## Learning: Genetic Algorithms
+* naive evolution: mitosis in reproduction
+* mimicking
+* choices abound
+* fitness space
+* examples  
+
+## Learning: Sparse Spaces, Phonology
+* what if god were an engineer
+* yip-sussman machine/learner
+* reflections
+
+Phonology: when a person makes a sound then it is heard by another and processed as a sequence of distinctive feature vectors. human can have about 16000 distinctive such sounds, there are no languages which has more than hundred.
+
+## Learning: Near Misses, Felicity Conditions
+* you can't learn unless you almost know already
+* value of talking to yourself
+
+## Learning: Support Vector Machines
+* decision boundaries
+* widest street approach
+* kernel functions
+* history lesson
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
 
