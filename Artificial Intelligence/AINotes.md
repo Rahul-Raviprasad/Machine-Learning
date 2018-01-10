@@ -175,6 +175,12 @@ Phonology: when a person makes a sound then it is heard by another and processed
 * widest street approach
 * kernel functions
 * history lesson
+
+## Learning: Boosting
+it has to do with binary classification
+* weak-strong
+* Ada boost
+* overfitting
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
 
