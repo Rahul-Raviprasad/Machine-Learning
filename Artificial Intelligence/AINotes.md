@@ -178,7 +178,7 @@ Phonology: when a person makes a sound then it is heard by another and processed
 
 ## Learning: Boosting
 it has to do with binary classification
-* weak-strong
+* weak-strong: any classifier would have an error rate, which will range from zero to one. near 0 will be strong classifiers and near say 0.5 are weak classifier, near 1 are useless
 * Ada boost
 * overfitting
 ## Quotes
