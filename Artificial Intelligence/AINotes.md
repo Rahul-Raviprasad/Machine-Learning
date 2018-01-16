@@ -181,6 +181,22 @@ it has to do with binary classification
 * weak-strong: any classifier would have an error rate, which will range from zero to one. near 0 will be strong classifiers and near say 0.5 are weak classifier, near 1 are useless
 * Ada boost
 * overfitting
+* decision tree stumps
+
+boosting can be used with any classifier
+
+there is no clear explanation yet why boosting doesn't cause overfitting.
+
+## Representations: Classes, Trajectories, Transitions
+Strong story hypothesis.
+
+Problem parasitic sematics
+* combinator
+* reification
+* localization
+
+
+
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
 
