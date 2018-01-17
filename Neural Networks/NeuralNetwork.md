@@ -47,3 +47,7 @@ There is a lot of interest at present in finding efficient ways of training recu
 3. Symmetrically Connected Networks
 
 These are like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions). Symmetric networks are much easier to analyze than recurrent networks. They are also more restricted in what they can do because they obey an energy function. Symmetrically connected nets without hidden units are called “Hopfield Nets.” Symmetrically connected network with hidden units are called “Boltzmann machines.”
+
+
+Sources: 
+https://towardsdatascience.com/the-8-neural-network-architectures-machine-learning-researchers-need-to-learn-11a0c96d6073
