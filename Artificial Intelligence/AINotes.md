@@ -194,6 +194,7 @@ Problem parasitic sematics
 * combinator
 * reification
 * localization
+* sequence
 
 We can have representations for objects which can be very vague and general to something more basic to very specific.
 For example saying I have a "Tool", we humans cannot imagine or hallucinate anything, because it is very vague.
@@ -205,6 +206,21 @@ Transition
 
 We tend to think in terms of changes. And we can develop symbols for these representations mostly the vocabulary would contain increase , decrease, change, appear and disappear. For each of these we can have a ! NOT variation. So in total 10 things are possible.
 
+Trajectory
+trajectory frame
+
+generally we tend to think in terms of some object moving in a trajectory. This has elements like the object itself moving from a source to a destination, and an agent to make that transition happen, using some instrument. There might be beneficiary who is benefitted by it, there might be some sort of conveyance also involved.
+
+###### How to write better stories?
+Rule 1: Don't use pronouns, it adds to the syntactic burden.
+In German and Russian, the noun is decorated by gender, this reduces the ambiguity by 3, so they can get away with pronouns.
+English speakers can't do this.
+
+Rule 2: Don't use former or latter
+most people can't figure out what we are referring to without having to stop and go back to check.
+
+Rule 3: Don't call a shovel a spade
+the reader can't tell if it was deliberate or accidental. whether there are 2 things or you are still talking about the same stuff
 
 
 ## Quotes
