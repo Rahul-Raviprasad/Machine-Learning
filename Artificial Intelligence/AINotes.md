@@ -195,6 +195,16 @@ Problem parasitic sematics
 * reification
 * localization
 
+We can have representations for objects which can be very vague and general to something more basic to very specific.
+For example saying I have a "Tool", we humans cannot imagine or hallucinate anything, because it is very vague.
+But if I say I have a hammer, now most of us can imagine something. And if I say A ball and peen hammer, then it becomes even more clear.
+
+But a point to note here is that the information when conveyed from vague to basic level, the ability to imagine something changes drastically. But when we more to more specific the change is not big.
+
+Transition
+
+We tend to think in terms of changes. And we can develop symbols for these representations mostly the vocabulary would contain increase , decrease, change, appear and disappear. For each of these we can have a ! NOT variation. So in total 10 things are possible.
+
 
 
 ## Quotes
