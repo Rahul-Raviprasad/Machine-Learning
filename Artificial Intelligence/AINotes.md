@@ -222,6 +222,19 @@ most people can't figure out what we are referring to without having to stop and
 Rule 3: Don't call a shovel a spade
 the reader can't tell if it was deliberate or accidental. whether there are 2 things or you are still talking about the same stuff
 
+## Architectures: GPS, SOAR, Subsumption, Society of Mind
+
+#### General purpose solver.
+
+We have a situation at 'a' and we want to go to result 's', then we can apply some operator 'o1' which takes us a little closer to 's', so we can then apply other operator 'o2' which will again take us closer and if we do this enough times then we will reach 's'.
+
+Early scientist predicted that in few years we will have built this to learn for itself. Like the problem we will try to solve itself would be to move from current to learn something new giving the computer intelligence like human do.
+
+This requires the computer to form table of what operators are possible which later we found is very difficult to achieve.
+
+#### SOAR
+
+
 
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
