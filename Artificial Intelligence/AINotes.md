@@ -233,7 +233,12 @@ Early scientist predicted that in few years we will have built this to learn for
 This requires the computer to form table of what operators are possible which later we found is very difficult to achieve.
 
 #### SOAR
+State operator and Result.
 
+1. Short term memory and long term memory
+2. reflections and rules aka predictions
+3. preferences
+4. problem spaces
 
 
 ## Quotes
