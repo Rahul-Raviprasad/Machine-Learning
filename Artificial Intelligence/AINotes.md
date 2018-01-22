@@ -239,7 +239,21 @@ State operator and Result.
 2. reflections and rules aka predictions
 3. preferences
 4. problem spaces
+5. universal sub goaling
 
+Emotion machine
+It has many layers
+
+instinctive reaction
+learned reaction
+deliberative thinking
+reflective thinking(self reflective and self conscious)
+
+## Probabilistic Inference I
+* probabilistic inference
+* belief nets
+* naive bayes classification
+* bayesian model discovery
 
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
