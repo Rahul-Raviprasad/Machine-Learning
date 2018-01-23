@@ -255,6 +255,40 @@ reflective thinking(self reflective and self conscious)
 * naive bayes classification
 * bayesian model discovery
 
+
+1. Basic probability
+2. Conditional probability
+3. chain rule
+4. independence
+5. conditional independence
+6. belief nets
+7. Joint probability table
+
+All of is very clear and intuitional when seen with a venn diagram
+
+Basic Probability axioms
+0 <= P(a) <= 1
+P(true) = 1
+P(false) = 0
+P(a) + P(b) - P(a intersection b) = P(a union b)
+
+From these basic axioms we can derive most of the thing in the field of probability
+
+Conditional Probability
+Read Naive Bayes theorem
+
+Independence definition
+P(a|b) = P(a) which means a is independent of b.
+
+Conditional Independence
+P(a|bz) = P(a|z)
+if a is independent of b
+
+## Probabilistic Inference II
+
+
+
+
 ## Quotes
 A computer or a person seem intelligent only as long as we don't know how they are solving the problems. The moment the internal working is revealed, the magic is lost and they become dumb again.
 
