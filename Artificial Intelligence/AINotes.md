@@ -284,6 +284,13 @@ Conditional Independence
 P(a|bz) = P(a|z)
 if a is independent of b
 
+Belief net
+when we draw a graph of how event will occur, then we are making this assertion that
+
+Any node on that graph, to independent of any non descendent given its parents.
+
+So we draw such a graph and solve it for say n events, then doing it traditionally would have taken us 2^n table. Here in the belief net the factors will be very less. 
+
 ## Probabilistic Inference II
 
 
