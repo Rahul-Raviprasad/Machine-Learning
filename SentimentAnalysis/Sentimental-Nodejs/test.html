@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <script src="example.js"></script>
+
+  <script>
+    console.log(analyze("had a good conversaion with the CEO. He is very positive about our product.").score);
+
+    function good() {
+      document.getElementById("goodResult").innerHTML = analyze("had a good conversaion with the CEO. He is very positive about our product.").score;
+    }
+
+    function bad() {
+      document.getElementById("badResult").innerHTML = analyze("bad call, They weren't responding, not confident about the prospect of this lead.").score;
+    }
+
+  </script>
+</head>
+<body>
+  <h3>
+    Sentiment analysis
+  </h3>
+  <!--p> This particular library isn't able to handle negation well. "not very good" is showing positive.</p-->
+
+  <li>
+    <p>had a good conversaion with the CEO. He is very positive about our product.</p>
+    <button onclick="good()">Analyze</button>
+    <p>Result =
+      <span id="goodResult"></span>
+    </p>
+  </li>
+
+  <li>
+    <p>bad call, They weren't responding, not confident about the prospect of this lead.</p>
+    <button onclick="bad()">Analyze</button>
+    <p>Result =
+      <span id="badResult"></span>
+    </p>
+  </li>
+
+</body>
+</html>
