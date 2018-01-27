@@ -1,0 +1,7 @@
+
+1. How does ontology be useful in text classification?
+Ans: For ML-style classification algorithms such as Naive Bayes or SVM where you train a model to read text as feature vectors and output one of N classes, one use of an ontology would be to markup entities in the text. So assume you have a medical ontology like UMLS whose nodes are various diseases, symptoms, medications, etc. You could look for these entities in your text and mark them up as single entities - so for example, if you found the string “Lung Cancer” in your text which is also a node in your ontology, you could replace all occurrences of “Lung Cancer” with a single token “Lung_Cancer” and treat this token as a feature for your classification.
+
+These ontology nodes usually contain multiple versions of the string that represents it. For example “heart attack” is also known as “myocardial infarction”, so if your text contains either string, they could be normalized down to one single string and treated as a single feature for classification.
+
+For earlier rule-based classifiers such as Bayesian Networks or decision tree algorithms, you could also leverage the knowledge in the ontology to create generalized rules. For example, if your task is to predict disease(s) for a patient described in the text, and your ontology indicates a strong relationship between heart disease and cardiology, seeing the string “cardiology” or “cardiologist” provides evidence for the text being about heart disease.
