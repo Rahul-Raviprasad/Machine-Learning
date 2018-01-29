@@ -296,6 +296,13 @@ So we draw such a graph and solve it for say n events, then doing it traditional
 ## Model Merging, Cross-Modal Coupling
 Bayesian story merging
 
+## What does AI offer that is different
+* A language for procedures
+* New ways to make models
+* enforced details
+* opportunities to explore
+* upper bounds
+
 
 
 ## Quotes
