@@ -2,7 +2,7 @@
 
 These are simplified models of the biological nervous system and therefore has drawn inspiration for the human brain.
 
-An NN, in general, is a highly interconnected network of a large number of processing elements called neurons, in an architecture inspired by the brain. A NN can be massively parallel exhibiting parallel distributed computing.
+A NN, in general, is a highly interconnected network of a large number of processing elements called neurons, in an architecture inspired by the brain. A NN can be massively parallel exhibiting parallel distributed computing.
 
 #### Characteristics
 1. Fault tolerant: Imagine if we loose few neurons in our brains, still it will not have a catastrophic impact it may cause some delay in the processing.
@@ -49,5 +49,5 @@ There is a lot of interest at present in finding efficient ways of training recu
 These are like recurrent networks, but the connections between units are symmetrical (they have the same weight in both directions). Symmetric networks are much easier to analyze than recurrent networks. They are also more restricted in what they can do because they obey an energy function. Symmetrically connected nets without hidden units are called “Hopfield Nets.” Symmetrically connected network with hidden units are called “Boltzmann machines.”
 
 
-Sources: 
+Sources:
 https://towardsdatascience.com/the-8-neural-network-architectures-machine-learning-researchers-need-to-learn-11a0c96d6073
