@@ -4,6 +4,7 @@
 * Especially useful for deep learning.
 * For research and production
 * Apache 2.0 license
+* its portable and scalable
 
 tensor flow uses data in form of tensors. It can be thought of as a multidimensional array.
 
@@ -20,3 +21,8 @@ Computation is defined as a directed acyclic graph (DAG) to optimize an objectiv
 * graph is executed (in parts or fully) on available low level devices(CPU, GPU).
 * Data (tensors) flows through the graph
 * TensorFlow can compute gradients automatically.
+
+## Architecture
+* Core in C++
+* Different frontends
+  * Python and C++ today community might add more.
