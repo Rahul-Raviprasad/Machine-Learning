@@ -26,3 +26,17 @@ Computation is defined as a directed acyclic graph (DAG) to optimize an objectiv
 * Core in C++
 * Different frontends
   * Python and C++ today community might add more.
+
+## Models in tensor flow
+* Inception
+https://github.com/tensorflow/models/tree/master/research/inception
+* Show and tell: A neural Image caption generator.
+https://github.com/tensorflow/models/tree/master/research/im2txt
+* Language model on one billion word
+https://github.com/tensorflow/models/tree/master/research/lm_1b
+* SyntaxNet: Neural Models of syntax
+https://github.com/tensorflow/models/tree/master/research/syntaxnet
+* resnet on cifar10 and cifar100
+https://github.com/tensorflow/models/tree/master/research/resnet
+* sequence to sequence with attention model for text summarization
+https://github.com/tensorflow/models/tree/master/research/textsum
