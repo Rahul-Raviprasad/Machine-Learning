@@ -40,3 +40,13 @@ https://github.com/tensorflow/models/tree/master/research/syntaxnet
 https://github.com/tensorflow/models/tree/master/research/resnet
 * sequence to sequence with attention model for text summarization
 https://github.com/tensorflow/models/tree/master/research/textsum
+* tensorflow slim image classification library
+https://github.com/tensorflow/models/tree/master/research/slim
+* Image compression with neural networks
+https://github.com/tensorflow/models/tree/master/research/compression
+* Autoencoders
+https://github.com/tensorflow/models/tree/master/research/autoencoder
+* Swivel
+https://github.com/tensorflow/models/tree/master/research/swivel
+* Spatial transformer network
+https://github.com/tensorflow/models/tree/master/research/transformer
