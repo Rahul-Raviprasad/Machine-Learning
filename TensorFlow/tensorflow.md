@@ -50,3 +50,10 @@ https://github.com/tensorflow/models/tree/master/research/autoencoder
 https://github.com/tensorflow/models/tree/master/research/swivel
 * Spatial transformer network
 https://github.com/tensorflow/models/tree/master/research/transformer
+
+## Solving a linear regression problem
+what we are trying to do?
+Mystery Equation: y = 0.1 * x + 0.3 + noise
+Model: y = W * x + b
+Objective:
+give enough (x,y) value samples, figure out the value of W and b.
