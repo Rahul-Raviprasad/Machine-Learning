@@ -1,13 +1,13 @@
 # TensorFlow
 
+### Features
 * Open source machine learning library.
 * Especially useful for deep learning.
 * For research and production
 * Apache 2.0 license
-* its portable and scalable
+* Its portable and scalable
 
-tensor flow uses data in form of tensors. It can be thought of as a multidimensional array.
-
+Tensor flow uses data in form of tensors. It can be thought of as a multidimensional array.
 Tensor flow models generally take tensors as input and give us tensor as output.
 
 ## What is a Tensor?
