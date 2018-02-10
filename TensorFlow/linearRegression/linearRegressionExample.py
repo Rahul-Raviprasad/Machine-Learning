@@ -12,7 +12,7 @@ noise = np.random.normal(scale=0.01, size=len(x_data))
 y_data = x_data * 0.1 + 0.3 + noise
 
 # Uncomment the following line to plot our input data.
-# pylab.plot(x_data, y_data, '.')
+pylab.plot(x_data, y_data, '.')
 
 # 1.3 Buld inference graph.
 # Create Variables W and b that compute y_data = W * x_data + b
@@ -24,6 +24,9 @@ y = W * x_data + b
 print(W.name)
 print(b.name)
 
+pylab.show()
+
+'''
 # 1.4 Build training graph.
 loss = tf.reduce_mean(tf.square(y - y_data))  # Create an operation that calculates loss.
 optimizer = tf.train.GradientDescentOptimizer(0.5)  # Create an optimizer.
@@ -63,3 +66,4 @@ print(sess.run([W, b]))
 # pylab.plot(x_data, sess.run(y), ".", label="trained_values")
 # pylab.legend()
 # pylab.ylim(0, 1.0)
+'''
