@@ -12,17 +12,17 @@ noise = np.random.normal(scale=0.01, size=len(x_data))
 y_data = x_data * 0.1 + 0.3 + noise
 
 # Uncomment the following line to plot our input data.
-pylab.plot(x_data, y_data, '.')
+# pylab.plot(x_data, y_data, '.')
 
 # 1.3 Buld inference graph.
 # Create Variables W and b that compute y_data = W * x_data + b
-W = tf.Variable(tf.random_uniform([1], 0.0, 1.0))
-b = tf.Variable(tf.zeros([1]))
+W = tf.Variable(tf.random_uniform([1], 0.0, 1.0), name="weight")
+b = tf.Variable(tf.zeros([1]), name="bias")
 y = W * x_data + b
 
 # Uncomment the following lines to see W and b are.
-print(W)
-print(b)
+print(W.name)
+print(b.name)
 
 # 1.4 Build training graph.
 loss = tf.reduce_mean(tf.square(y - y_data))  # Create an operation that calculates loss.
