@@ -26,7 +26,7 @@ print(b.name)
 
 pylab.show()
 
-'''
+
 # 1.4 Build training graph.
 loss = tf.reduce_mean(tf.square(y - y_data))  # Create an operation that calculates loss.
 optimizer = tf.train.GradientDescentOptimizer(0.5)  # Create an optimizer.
@@ -39,10 +39,11 @@ print("optimizer:", optimizer)
 print("train:", train)
 print(init)
 
+# this graph is the nueral net that we have built.
 # 1.5 Uncomment the following line to see what we have built.
-print(tf.get_default_graph().as_graph_def())
+#print(tf.get_default_graph().as_graph_def())
 
-
+'''
 # 1.6 Create a session and launch the graph.
 sess = tf.Session()
 sess.run(init)

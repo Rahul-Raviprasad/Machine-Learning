@@ -57,3 +57,6 @@ Mystery Equation: y = 0.1 * x + 0.3 + noise
 Model: y = W * x + b
 Objective:
 give enough (x,y) value samples, figure out the value of W and b.
+
+## Solving MNIST problem
+Given enough images and labels, figure out the weights and biases so that the model can correctly identify the digits.
