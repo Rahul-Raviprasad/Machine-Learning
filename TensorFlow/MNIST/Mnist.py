@@ -97,8 +97,7 @@ def mnist_training(logits, labels, learning_rate):
     """
     # Create an operation that calculates loss.
     labels = tf.to_int64(labels)
-    cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(
-        logits, labels, name='xentropy')
+    cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits, labels, name='xentropy')
     loss = tf.reduce_mean(cross_entropy, name='xentropy_mean')
     # Create the gradient descent optimizer with the given learning rate.
     optimizer = tf.train.GradientDescentOptimizer(learning_rate)
@@ -193,3 +192,6 @@ with tf.Session(graph=tf.Graph()) as sess:
                           feed_dict={images_placeholder: images_feed,
                                      labels_placeholder: labels_feed})
     print("Ground truth: %d\nPrediction: %d" % (labels_feed, prediction.indices[0][0]))
+
+
+plt.show()

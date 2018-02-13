@@ -60,3 +60,12 @@ give enough (x,y) value samples, figure out the value of W and b.
 
 ## Solving MNIST problem
 Given enough images and labels, figure out the weights and biases so that the model can correctly identify the digits.
+
+## Exercises to run
+1. Run all the cells
+2. Uncomment the graph writing to see what the graph looks like.
+3. Print out loss value every 100 steps. What do you notice?
+4. Save checkpoint every 500 steps
+5. Run evaluation with different checkpoints. What do you notice?
+6. Run evaluation on the complete validation set.
+7. Build evaluation graph from scratch instead of importing from meta graph.
