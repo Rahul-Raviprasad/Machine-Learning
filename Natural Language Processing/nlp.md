@@ -48,3 +48,9 @@ print(filtered_sentence)
 ```
 
 ## Stemming
+In linguistic morphology and information retrieval, stemming is the process of reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. The stem need not be identical to the morphological root of the word; it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root. Algorithms for stemming have been studied in computer science since the 1960s. Many search engines treat words with the same stem as synonyms as a kind of query expansion, a process called conflation.
+
+Example:
+I was eating an Apple.
+I ate an Apple.
+Both mean the same and the word eating ate should be mapped to a single root.
