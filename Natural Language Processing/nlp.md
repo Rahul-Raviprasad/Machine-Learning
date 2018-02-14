@@ -54,3 +54,23 @@ Example:
 I was eating an Apple.
 I ate an Apple.
 Both mean the same and the word eating ate should be mapped to a single root.
+
+
+```python
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+
+ps = PorterStemmer()
+
+words = ["python", "pythoner", "pythoning", "pythoned", "pythonly"]
+
+for w in words:
+  print(ps.stem(w))
+
+new_text = "it is very important to be pythonly, while you are pythoning with python. All pythoners have pythoned for long time"
+
+words = word_tokenize(new_text)
+
+for w in words:
+  print(ps.stem(w))
+```
