@@ -74,3 +74,14 @@ words = word_tokenize(new_text)
 for w in words:
   print(ps.stem(w))
 ```
+
+## Part of Speech Tagging
+
+```python
+import nltk
+from nltk.corpus import state_union
+from nltk.tokenize import PunktSentenceTokenizer
+
+
+
+```
