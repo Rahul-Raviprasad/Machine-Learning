@@ -69,3 +69,9 @@ Given enough images and labels, figure out the weights and biases so that the mo
 5. Run evaluation with different checkpoints. What do you notice?
 6. Run evaluation on the complete validation set.
 7. Build evaluation graph from scratch instead of importing from meta graph.
+
+# Tensorflow and deep learning - without a PhD by Martin Görne
+
+## Resources
+1. TensorFlow Tutorial (Sherry Moore, Google Brain): https://github.com/sherrym/tf-tutorial/blob/master/2_mnist.ipynb
+2.
