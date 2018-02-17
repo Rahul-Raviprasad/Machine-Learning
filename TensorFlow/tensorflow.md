@@ -72,6 +72,10 @@ Given enough images and labels, figure out the weights and biases so that the mo
 
 # Tensorflow and deep learning - without a PhD by Martin Görne
 
+Softmax classification: weighted sum of all pixels + bias
+
+Activation functions:
+
 ## Resources
 1. TensorFlow Tutorial (Sherry Moore, Google Brain): https://github.com/sherrym/tf-tutorial/blob/master/2_mnist.ipynb
 2.
