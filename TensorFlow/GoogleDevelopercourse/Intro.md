@@ -155,3 +155,46 @@ loss
 training
 
 ## Reducing Loss: Gradient Descent
+
+Suppose we had the time and the computing resources to calculate the loss for all possible values of . For the kind of regression problems we've been examining, the resulting plot of loss vs.  will always be convex. In other words, the plot will always be bowl-shaped
+Convex problems have only one minimum; that is, only one place where the slope is exactly 0. That minimum is where the loss function converges.
+
+Calculating the loss function for every conceivable value of w1 over the entire data set would be an inefficient way of finding the convergence point. Let's examine a better mechanism—very popular in machine learning—called gradient descent.
+
+The first stage in gradient descent is to pick a starting value (a starting point) for w1. The starting point doesn't matter much; therefore, many algorithms simply set w1 to 0 or pick a random value.
+
+The gradient descent algorithm then calculates the gradient of the loss curve at the starting point. In brief, a gradient is a vector of partial derivatives; it tells you which way is "warmer" or "colder." Note that the gradient of loss with respect to a single weight is equivalent to the derivative.
+
+Note that a gradient is a vector, so it has both of the following characteristics:
+
+a direction
+a magnitude
+The gradient always points in the direction of steepest increase in the loss function. The gradient descent algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible
+
+To determine the next point along the loss function curve, the gradient descent algorithm adds some fraction of the gradient's magnitude to the starting point.
+
+## Key Terms
+gradient descent
+step
+
+## Reducing Loss: Learning Rate
+
+As noted, the gradient vector has both a direction and a magnitude. Gradient descent algorithms multiply the gradient by a scalar known as the learning rate (also sometimes called step size) to determine the next point. For example, if the gradient magnitude is 2.5 and the learning rate is 0.01, then the gradient descent algorithm will pick the next point 0.025 away from the previous point.
+
+Hyperparameters are the knobs that programmers tweak in machine learning algorithms. Most machine learning programmers spend a fair amount of time tuning the learning rate. If you pick a learning rate that is too small, learning will take too long
+
+Conversely, if you specify a learning rate that is too large, the next point will perpetually bounce haphazardly across the bottom of the well like a quantum mechanics experiment gone horribly wrong:
+
+https://en.wikipedia.org/wiki/Goldilocks_principle
+There's a Goldilocks learning rate for every regression problem. The Goldilocks value is related to how flat the loss function is. If you know the gradient of the loss function is small then you can safely try a larger learning rate, which compensates for the small gradient and results in a larger step size.
+
+The ideal learning rate in one-dimension is  1/f(x)'' (the inverse of the second derivative of f(x) at x).
+
+The ideal learning rate for 2 or more dimensions is the inverse of the Hessian (matrix of second partial derivatives).
+
+The story for general convex functions is more complex.
+
+## Key Terms
+hyperparameter
+learning rate
+step size
