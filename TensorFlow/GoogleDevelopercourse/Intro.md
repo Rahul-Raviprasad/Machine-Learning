@@ -216,3 +216,80 @@ batch
 batch size
 mini-batch
 stochastic gradient descent
+
+# First Steps with TensorFlow: Toolkit
+
+The following table summarizes the purposes of the different layers:
+
+| Toolkit(s)                         | Description         |
+| :--------------------------------- | :-------------------|
+| Estimator (tf.estimator)           | High-level, OOP API.|
+| tf.layers/tf.losses/tf.metrics	   | Libraries for common model components.|
+| TensorFlow	                       | Lower-level APIs    |
+
+TensorFlow consists of the following two components:
+
+a graph protocol buffer
+a runtime that executes the (distributed) graph
+These two components are analogous to the Java compiler and the JVM. Just as the JVM is implemented on multiple hardware platforms, so is TensorFlow—CPUs and GPUs.
+
+Which API(s) should you use? You should use the highest level of abstraction that solves the problem. The higher levels of abstraction are easier to use, but are also (by design) less flexible. We recommend you start with the highest-level API first and get everything working. If you need additional flexibility for some special modeling concerns, move one level lower. Note that each level is built using the APIs in lower levels, so dropping down the hierarchy should be reasonably straightforward.
+
+
+First Steps with TensorFlow: Toolkit
+Estimated Time: 4 minutes
+The following figure shows the current hierarchy of TensorFlow toolkits:
+
+TensorFlow Estimators
+tf.layers
+,
+tf.losses
+,
+tf.metrics
+Python TensorFlow
+C++ TensorFlow
+CPU
+GPU
+High-level, object-oriented API
+Reusable libraries for common model components
+Provides Ops, which wrap C++ Kernels
+Kernels work on one or more platforms
+TPU
+Figure 1. TensorFlow toolkit hierarchy.
+
+The following table summarizes the purposes of the different layers:
+
+Toolkit(s)	Description
+Estimator (tf.estimator)	High-level, OOP API.
+tf.layers/tf.losses/tf.metrics	Libraries for common model components.
+TensorFlow	Lower-level APIs
+TensorFlow consists of the following two components:
+
+a graph protocol buffer
+a runtime that executes the (distributed) graph
+These two components are analogous to the Java compiler and the JVM. Just as the JVM is implemented on multiple hardware platforms, so is TensorFlow—CPUs and GPUs.
+
+Which API(s) should you use? You should use the highest level of abstraction that solves the problem. The higher levels of abstraction are easier to use, but are also (by design) less flexible. We recommend you start with the highest-level API first and get everything working. If you need additional flexibility for some special modeling concerns, move one level lower. Note that each level is built using the APIs in lower levels, so dropping down the hierarchy should be reasonably straightforward.
+
+#### tf.estimator API
+We'll use tf.estimator for the majority of exercises in Machine Learning. Everything you'll do in the exercises could have been done in lower-level (raw) TensorFlow, but using tf.estimator dramatically lowers the number of lines of code.
+
+tf.estimator is compatible with the scikit-learn API. Scikit-learn is an extremely popular open-source ML library in Python, with over 100k users, including many at Google.
+
+Very broadly speaking, here's the format of a linear regression program implemented in tf.estimator:
+```Python
+import tensorflow as tf
+
+# Set up a linear classifier.
+classifier = tf.estimator.LinearClassifier()
+
+# Train the model on some example data.
+classifier.train(input_fn=train_input_fn, steps=2000)
+
+# Use it to predict.
+predictions = classifier.predict(input_fn=predict_input_fn)
+```
+## Key Terms
+Estimators
+graph
+tensor
