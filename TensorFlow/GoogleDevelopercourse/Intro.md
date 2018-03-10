@@ -293,3 +293,6 @@ predictions = classifier.predict(input_fn=predict_input_fn)
 Estimators
 graph
 tensor
+
+## perils of overfitting
+William of Occam, a 14th century friar and philosopher, loved simplicity. He believed that scientists should prefer simpler formulas or theories over more complex ones. To put Occam's razor in machine learning terms:
