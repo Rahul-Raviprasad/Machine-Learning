@@ -296,3 +296,5 @@ tensor
 
 ## perils of overfitting
 William of Occam, a 14th century friar and philosopher, loved simplicity. He believed that scientists should prefer simpler formulas or theories over more complex ones. To put Occam's razor in machine learning terms:
+
+"The less complex an ML model, the more likely that a good empirical result is not just due to the peculiarities of the sample."
