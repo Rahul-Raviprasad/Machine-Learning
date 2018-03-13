@@ -298,3 +298,12 @@ tensor
 William of Occam, a 14th century friar and philosopher, loved simplicity. He believed that scientists should prefer simpler formulas or theories over more complex ones. To put Occam's razor in machine learning terms:
 
 "The less complex an ML model, the more likely that a good empirical result is not just due to the peculiarities of the sample."
+
+A machine learning model aims to make good predictions on new, previously unseen data. But if you are building a model from your data set, how would you get the previously unseen data? Well, one way is to divide your data set into two subsets:
+
+training set — a subset to train a model.
+test set — a subset to test the model.
+Good performance on the test set is a useful indicator of good performance on the new data in general, assuming that:
+
+The test set is large enough.
+You don't cheat by using the same test set over and over.
