@@ -307,3 +307,10 @@ Good performance on the test set is a useful indicator of good performance on th
 
 The test set is large enough.
 You don't cheat by using the same test set over and over.
+
+Make sure that your test set meets the following two conditions:
+
+Is large enough to yield statistically meaningful results.
+Is representative of the data set as a whole. In other words, don't pick a test set with different characteristics than the training set.
+
+Never train on test data. If you are seeing surprisingly good results on your evaluation metrics, it might be a sign that you are accidentally training on the test set. For example, high accuracy might indicate that test data has leaked into the training set.
