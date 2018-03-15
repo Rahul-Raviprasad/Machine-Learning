@@ -314,3 +314,23 @@ Is large enough to yield statistically meaningful results.
 Is representative of the data set as a whole. In other words, don't pick a test set with different characteristics than the training set.
 
 Never train on test data. If you are seeing surprisingly good results on your evaluation metrics, it might be a sign that you are accidentally training on the test set. For example, high accuracy might indicate that test data has leaked into the training set.
+
+## Validation
+"Tweak model" means adjusting anything about the model you can dream up—from changing the learning rate, to adding or removing features, to designing a completely new model from scratch. At the end of this workflow, you pick the model that does best on the test set.
+
+Dividing the data set into two sets is a good idea, but not a panacea. You can greatly reduce your chances of overfitting by partitioning the data set into the three subsets
+
+In this improved workflow:
+
+Pick the model that does best on the validation set.
+Double-check that model against the test set.
+This is a better workflow because it creates fewer exposures to the test set.
+
+## Key Terms
+overfitting
+test set
+training set
+validation set
+
+## Representation
+A machine learning model can't directly see, hear, or sense input examples. Instead, you must create a representation of the data to provide the model with a useful vantage point into the data's key qualities. That is, in order to train a model, you must choose the set of features that best represent the data.
